@@ -13,6 +13,24 @@
 ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)Lint on save
 ? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In dedicated config files
 
+##  typescript
+
+>  Parameter 'to' implicitly has an 'any' type.
+
+tsconfig.json
+
+```js
+    "noImplicitAny": false,
+```
+
+> Property 'dataList' has no initializer and is not definitely assigned in the constructor.
+
+tsconfig.json
+
+```js
+    "strictPropertyInitialization": false,
+```
+
 ## Project setup
 ```
 yarn install
