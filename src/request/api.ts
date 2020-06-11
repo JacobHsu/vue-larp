@@ -32,7 +32,8 @@ export const getUserInfo = async (data = {}) => {
 };
 //  轮播
 export const getLunbo = async (data = {}) => {
-  const url = "/api/lunbo";
+  // http://localhost:3000/api/lunbo
+  const url = "http://localhost:3000/api/lunbo"; // "/api/lunbo";
   const result: AxiosResponse<ResInfo<LunBoInfo[]>> = await http({
     method: "get",
     url,

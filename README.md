@@ -30,6 +30,9 @@ tsconfig.json
 ```js
     "strictPropertyInitialization": false,
 ```
+## References
+
+[vue-ts-fiction](https://github.com/Tmfree/vue-fiction)
 
 ## Project setup
 ```
