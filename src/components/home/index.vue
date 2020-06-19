@@ -1,7 +1,10 @@
 <template>
   <div>
-    <LunBo :data-list="lunboList" />
+    <!-- <LunBo :data-list="lunboList" /> -->
     <!-- <Fun /> -->
+    <section class="fiction-wrapper">
+      <NavHeader :is-more="false" title="热门小说" desc="起点编辑推荐" />
+    </section>
   </div>
 </template>
 
@@ -10,11 +13,13 @@ import { mapGetters } from "vuex";
 import { Component, Vue } from "vue-property-decorator";
 import Fun from "./Fun.vue";
 import LunBo from "./LunBo.vue";
+import NavHeader from "@/components/common/NavHeader.vue";
 
 @Component({
   components: {
     LunBo,
-    Fun
+    Fun,
+    NavHeader
   },
   computed: mapGetters(["lunboList"])
 })

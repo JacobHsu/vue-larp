@@ -13,3 +13,5 @@ http://localhost:3000/api/lunbo
         |-- filterResCode API Res
     |-- package.json
     |-- README.md
+
+server\utils\writeData.js 抓取 mock 數據

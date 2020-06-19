@@ -3,6 +3,9 @@ import { UserInfo } from "@/interface/user";
 import { Toast } from "vant";
 import { AxiosResponse } from "axios";
 import { ResInfo, LunBoInfo } from "@/interface/base";
+
+const apiPath = "http://localhost:3001";
+
 // 登录
 export const postLogin = async (data = {}) => {
   const url = "/api/login";
@@ -33,7 +36,7 @@ export const getUserInfo = async (data = {}) => {
 //  轮播
 export const getLunbo = async (data = {}) => {
   // http://localhost:3000/api/lunbo
-  const url = "http://localhost:3000/api/lunbo"; // "/api/lunbo";
+  const url = `${apiPath}/api/lunbo`; // "/api/lunbo";
   const result: AxiosResponse<ResInfo<LunBoInfo[]>> = await http({
     method: "get",
     url,

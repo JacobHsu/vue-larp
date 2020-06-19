@@ -74,7 +74,7 @@ function find(filePath, obj = {}) {
       return resolve(result);
     }
     //查询全部
-    if (!tool.isEmptyObj(obj)) {
+    if (!check.isEmptyObj(obj)) {
       return resolve(data);
     }
     //过滤匹配的数据
